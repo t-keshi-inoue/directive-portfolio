@@ -6,10 +6,10 @@ export default function Footer() {
     <div id="footer">
       <div className="container medium">
         <header className="major last">
-          <h2>Questions or comments?</h2>
+          <h2>Feel Free to Contact Me</h2>
         </header>
 
-        <p>Life will feel it is always a great time to chat</p>
+        <p>お気軽にご連絡をお待ちしております。</p>
 
         <ContactForm />
 
@@ -27,7 +27,7 @@ export default function Footer() {
         </ul>
 
         <ul className="copyright">
-          <li>&copy; Directive. All rights reserved.</li>
+          <li>&copy; Takeshi Inoue. All rights reserved.</li>
           <li>
             Design: <a href="http://html5up.net">HTML5 UP</a>
           </li>
