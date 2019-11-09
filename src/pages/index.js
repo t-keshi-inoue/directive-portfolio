@@ -6,10 +6,10 @@ import { Link } from 'gatsby';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-import pic1 from '../assets/images/tomate.png';
-import pic2 from '../assets/images/skyhigh.png';
-import pic3 from '../assets/images/canpass.png';
-import pic4 from '../assets/images/tragic.png';
+import tomate from '../assets/images/tomate.jpg';
+import before from '../assets/images/before.jpg';
+import electric from '../assets/images/electric.jpg';
+import tragic from '../assets/images/tragic.jpg';
 
 const IndexPage = () => (
   <Layout>
@@ -30,7 +30,7 @@ const IndexPage = () => (
       <div className="box alt container">
         <section className="feature left">
           <a href="https://tomate-receita.takeshitoras79.now.sh/" className="image icon fa-heart">
-            <img src={pic1} alt="tomate" />
+            <img src={tomate} alt="tomate" />
           </a>
           <div className="content">
             <h3>ToMate</h3>
@@ -44,42 +44,43 @@ const IndexPage = () => (
         </section>
         <section className="feature right">
           <a href="/#" className="image icon fa-pencil">
-            <img src={pic2} alt="" />
+            <img src={before} alt="before" />
+            
           </a>
           <div className="content">
-            <h3>Sky High</h3>
-            <small>目標管理アプリ</small><br/>
+            <h3>Before:trip</h3>
+            <small>！作成中！</small><br/>
             <sub>
-              抽象度別で目標を管理できるWebアプリです。<br/>
-              コンセプト：「大きな目標と小さなTODOを結びつける」<br/>
-              ペルソナ：20代前半男性　大学生
+              外国語を学ベるアプリです。<br/>
+              コンセプト：「飛行機の中で現地の言葉を学ぼう」<br/>
+              ペルソナ：20代男女
             </sub>
           </div>
         </section>
         <section className="feature left">
           <a href="/#" className="image icon fa-calendar">
-            <img src={pic3} alt="" />
+            <img src={electric} alt="electric" />
           </a>
           <div className="content">
-          <h3>CanPass</h3>
-            <small>EラーニングWebサイト</small><br/>
+          <h3>Electric Sheep</h3>
+            <small>技術系のブログ</small><br/>
             <sub>
-              簿記を学べるWebサイトです。<br/>
-              コンセプト：「アレルギーにならない簿記学習サイト」<br/>
-              ペルソナ：20代男女　会社員　営業部門
+              備忘録も兼ねたプログラミングの学習記録です。<br/>
+              コンセプト：「とにかく見やすいブログ」<br/>
+              ペルソナ：エンジニア
           </sub>
           </div>
         </section>
         <section className="feature right">
           <a href="https://hopeful-snyder-513666.netlify.com/" className="image icon fa-music">
-            <img src={pic4} alt="tragic" />
+            <img src={tragic} alt="tragic" />
           </a>
           <div className="content">
             <h3>Tragic Love Company</h3>
             <small>バンドPRページ</small><br/>
             <sub>
               友人のバンドのホームページです。<br/>
-              コンセプト：「とにかくMusicVideoを見てもらう！」<br/>
+              コンセプト：「MusicVideoを見てもらう」<br/>
               ペルソナ：20代男女　音楽が好きな人
             </sub>
           </div>
