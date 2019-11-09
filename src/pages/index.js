@@ -29,24 +29,23 @@ const IndexPage = () => (
 
       <div className="box alt container">
         <section className="feature left">
-          <a href="https://tomate-receita.takeshitoras79.now.sh/" className="image icon fa-heart">
+          <Link to="/works/Tomate" className="image icon fa-heart">
             <img src={tomate} alt="tomate" />
-          </a>
+          </Link>
           <div className="content">
             <h3>ToMate</h3>
             <small>レシピ検索API</small><br/>
             <sub>
-              スペイン料理のレシピを検索できるWebサイトです。<br/>
+              海外の料理のレシピを検索できるWebサイトです。<br/>
               コンセプト：「本場の味を、本場のレシピで」<br/>
               ペルソナ：20代女性　主婦
             </sub>
           </div>
         </section>
         <section className="feature right">
-          <a href="/#" className="image icon fa-pencil">
+          <Link to="/works/Before" className="image icon fa-pencil">
             <img src={before} alt="before" />
-            
-          </a>
+          </Link>
           <div className="content">
             <h3>Before:trip</h3>
             <small>！作成中！</small><br/>
@@ -58,9 +57,9 @@ const IndexPage = () => (
           </div>
         </section>
         <section className="feature left">
-          <a href="/#" className="image icon fa-calendar">
+          <Link to="/works/Electric" className="image icon fa-calendar">
             <img src={electric} alt="electric" />
-          </a>
+          </Link>
           <div className="content">
           <h3>Electric Sheep</h3>
             <small>技術系のブログ</small><br/>
@@ -72,9 +71,9 @@ const IndexPage = () => (
           </div>
         </section>
         <section className="feature right">
-          <a href="https://hopeful-snyder-513666.netlify.com/" className="image icon fa-music">
+          <Link to="/works/Tragic" className="image icon fa-music">
             <img src={tragic} alt="tragic" />
-          </a>
+          </Link>
           <div className="content">
             <h3>Tragic Love Company</h3>
             <small>バンドPRページ</small><br/>
@@ -88,9 +87,9 @@ const IndexPage = () => (
       </div>
 
       <footer className="major container medium">
-        <h3>ちょっと待って!</h3>
+        <h3>ご挨拶</h3>
         <p>
-          転職活動中のエンジニアです。少しだけ自己紹介させてください。
+          転職活動中の26歳のエンジニアです。
         </p>
         <ul className="actions special">
           <li>

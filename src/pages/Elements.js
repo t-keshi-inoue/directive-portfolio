@@ -23,10 +23,11 @@ const IndexPage = () => (
             人事システム導入経験を経て、エンジニアを志す。
           </p>
         </section>
+
         <br />
         <section>
           <header>
-            <h3>来歴</h3>
+            <h3>学歴・職歴</h3>
           </header>
           <div className="table-wrapper">
             <table className="default">
@@ -89,7 +90,7 @@ const IndexPage = () => (
                   <td>JavaScript</td>
                   <td>ー</td>
                   <td>
-                    アニメーションやDOM操作ができるレベル
+                    配列の扱いやDOMの操作ができるレベル
                   </td>
                 </tr>
                 <tr>

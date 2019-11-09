@@ -6,12 +6,8 @@
 @import 'libs/html-grid';
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic");
+//@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500,700");
 
-/*
-	Directive by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 // Breakpoints.
 
@@ -24,8 +20,7 @@
 		mobilep:   ( null,    480px  )
 	));
 
-// Reset.
-// Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain)
+// Reset SCSS
 
 	html, body, div, span, applet, object,
 	iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -97,8 +92,7 @@
 
 /* Basic */
 
-	// Set box model to border-box.
-	// Based on css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+	// outlined box
 		html {
 			box-sizing: border-box;
 		}
@@ -114,7 +108,7 @@
 	body, .main-body {
 		background: _palette(bg);
 
-		// Stops initial animations until page loads.
+		// 描画の遅延.
 			&.is-preload {
 				*, *:before, *:after {
 					@include vendor('animation', 'none !important');
@@ -209,6 +203,10 @@
 		margin: 0 auto;
 		max-width: 100%;
 		width: 51em;
+
+		&.gutter-bottom {
+			margin-bottom: 20px
+		}
 
 		&.medium {
 			width: (51em * 0.75);
@@ -792,6 +790,10 @@
 		text-decoration: none;
 		text-transform: uppercase;
 
+		&.hidden {
+			display: none;
+		}
+
 		&:hover {
 			background: lighten(_palette(accent2, bg), 10);
 		}
@@ -821,6 +823,11 @@
 		&.small {
 			font-size: 0.8em;
 		}
+
+		&.spacing {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
 	}
 
 /* Box */
@@ -835,6 +842,10 @@
 			background: none;
 			border: none;
 			padding: 0;
+		}
+
+		&.topfit {
+			padding-top: 0;
 		}
 	}
 
@@ -1221,6 +1232,10 @@
 
 			h3 {
 				font-size: 1.15em;
+			}
+
+			h4 {
+				font-size: 0.95em;
 			}
 
 		/* Section/Article */
