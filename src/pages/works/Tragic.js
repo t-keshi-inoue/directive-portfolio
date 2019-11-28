@@ -91,7 +91,7 @@ const Tragic = () => (
             <li>言語：JavaScript</li>
             <li>ライブラリ：React</li>
             <li>フレームワーク：Gatsby.js</li>
-            <li>スタイリング：less</li>
+            <li>スタイリング：Less</li>
             <li>ホスティング：Netlify</li>
           </ul>
         </div>
