@@ -27,6 +27,23 @@ const IndexPage = () => (
       </header>
 
       <div className="box alt container">
+        <section className="feature right">
+          <Link to="/works/Livrio" className="image icon fa-heart">
+            <img src={tomate} alt="tomate" />
+          </Link>
+          <div className="content">
+            <h3>Livrio</h3>
+            <small>図書管理サービス</small>
+            <br />
+            <sub>
+              開発チームが技術書を管理するためのツールです。
+              <br />
+              コンセプト：「技術書が探せる・見つかる・借りられる」
+              <br />
+              ペルソナ：30代男性　エンジニア
+            </sub>
+          </div>
+        </section>
         <section className="feature left">
           <Link to="/works/Waikan" className="image icon fa-beer">
             <img src={waikan} alt="waikan" />
