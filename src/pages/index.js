@@ -29,7 +29,7 @@ const IndexPage = () => (
 
       <div className="box alt container">
         <section className="feature right">
-          <Link to="/works/Livrio" className="image icon fa-heart">
+          <Link to="/works/Livrio" className="image icon fa-book">
             <img src={livrio} alt="livrio" />
           </Link>
           <div className="content">
