@@ -6,6 +6,7 @@ import { Link } from 'gatsby';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+import livrio from '../assets/images/livrio.jpg';
 import tomate from '../assets/images/tomate.jpg';
 import waikan from '../assets/images/waikan.jpg';
 import electric from '../assets/images/electric.jpg';
@@ -29,7 +30,7 @@ const IndexPage = () => (
       <div className="box alt container">
         <section className="feature right">
           <Link to="/works/Livrio" className="image icon fa-heart">
-            <img src={tomate} alt="tomate" />
+            <img src={livrio} alt="livrio" />
           </Link>
           <div className="content">
             <h3>Livrio</h3>

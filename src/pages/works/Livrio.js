@@ -53,11 +53,11 @@ const Livrio = () => (
           </header>
           <h4>デザイン</h4>
           <p>
-            デザインについてはQiitaのレイアウトを多少参考にしております。
-            例えば"How developers read here"は、"How developers coad
+            デザインについてはQiitaのレイアウトを参考にしております。 例えば"How
+            developers read is here"は、"How developers code is
             here"（Qiitaの標語）をもじったものです。
             デザインは余計な要素を排除し、シンプルな色使いと文字の見やすさを優先しました。
-            また今回はとくに「デザインにルールを」ということを意識し、余白の値などに統一性を持たせています。
+            また今回はとくに「デザインにもルールを」ということを意識し、余白の値などに統一性を持たせています。
             スマホ、タブレットからも閲覧が可能です。
           </p>
           <h4>レビュー</h4>
@@ -81,6 +81,7 @@ const Livrio = () => (
             <li>ライブラリ：React</li>
             <li>状態管理：Redux</li>
             <li>データベース：Firestore</li>
+            <li>フォーム：Formik & Yup</li>
             <li>スタイリング：styled-components</li>
             <li>ホスティング：Firebase Hosting</li>
           </ul>
