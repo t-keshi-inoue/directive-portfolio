@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import livriowork1 from '../../assets/images/livriowork1.png';
 import livrioworks2 from '../../assets/images/livrioworks2.png';
+import livrioData from '../../assets/images/livrioData.png';
 import programming from '../../assets/images/programming.jpg';
 
 const Livrio = () => (
@@ -93,6 +94,26 @@ const Livrio = () => (
             全体として、「自分が1年後にこれを見ても、ストレスなくコードを読めるか？」と問いかけながら開発していったので、
             その試みが少しでも成功していれば幸いです。
             今後も、より安全な型付けに変え保守性を強化するなど、バージョンアップしていきたいと考えています。
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div className="box major container with-image">
+          <div className="container gutter-bottom">
+            <div className="image fit">
+              <img src={livrioData} alt="livrio" />
+            </div>
+          </div>
+          <h3>難しかった点</h3>
+          <p>
+            NoSQLに触れるのが今回初めてであり、Firestoreの設計に苦戦しました。
+            いわゆる「中間テーブル」のようなものは敢えて作らず、usersの中に主なデータを格納する設計にしています。
+            borrowのサブコレクションに、ISBNコードに紐付けて借りた日や返した日などのデータがあります。
+            commentsのサブコレクションに、同じくISBNコードに紐付けてコメントの内容やコメントした日付などのデータがあります。
+            また、並んでいる本の中で自分のお気に入りの本やコメントした本の色を変えるという機能の実装のために、コレクション直下にlikes,commentsが配列として置かれています。
+            これによりcommentsした際には2箇所に書き込みが生じる形になってしまいましたが、データの読み込みの際は簡単です。これらの設計が正解だったかどうかはわかりませんが、
+            色々と悩む中でDB設計は非常に奥深いものだと学ぶことが出来ました。いづれは本格的なSQLに触れていきたいと思います。
           </p>
         </div>
       </section>
